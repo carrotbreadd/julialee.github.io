@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  }
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #98abeb;
+  padding: 1rem;
+  border-bottom: 3px solid #6f7fc5;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #222
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #98abeb;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 3px solid #6f7fc5;
+}
+
+/*********** Splash Page ************************/
+header {
+  background: linear-gradient(to right, #98abeb, #c3cefa);
+  color: #222;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #222;
+  margin: 0.5rem 0;
+  
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.address {
+  font-style: italic;
+  color: #444;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #222;
+  margin-top: 0.5rem;
+}
+
+/************* Sections ********************/
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 2px solid #d0d7f7;
+}
+
+section h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  color: 6f7fc5;
+  margin-bottom: 0.5rem;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.5rem 1rem;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+section a {
+  color: #6f7fc5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: #3f4c91;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: #f0f3ff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  border: 1px solid #c3cefa;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #98abeb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+textarea {
+  width: 100;
+  min-height: 140px;
+  padding: 0.75rem;
+  border: 1px solid #98abeb;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #fff;
+  resize: vertical; 
+  box-sizing: border-box;
+}
