@@ -135,6 +135,12 @@ section a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   text-align: center;
   border: 1px solid #c3cefa;
+  transition: transform 0.25s ease, box-shadow 0.25 ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
 /**************   Responsiveness   *****************/
@@ -144,9 +150,26 @@ section a:hover {
       align-items: center;
     }
 
+    nav a {
+      margin: 0.5rem 0;
+    }
+    header {
+      padding: 2rem 1rem;
+    }
+
     .three-col {
       grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
       justify-items: center;
+    }
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+    .one-col {
+      width: 100%;
+      padding: 0 1rem;
     }
 }
 
